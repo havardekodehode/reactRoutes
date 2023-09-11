@@ -1,4 +1,4 @@
-const Card = [
+[
     {
         "name": "Link",
         "quote": "I'm so hungry, I could eat an octorok!",
@@ -30,15 +30,3 @@ const Card = [
         "imageUrl": "https://www.giantbomb.com/a/uploads/original/0/7395/2530133-11.png"
     }
 ]
-
-export default function SillyCard() {
-    return(
-        <ol className="displayCard">{
-            Card.map(data => (
-                <h2>{data.name}</h2>,
-                <p>{data.quote}</p>,
-                <img src={data.imageUrl} alt=""></img>
-            ))
-            }
-        </ol>)
-}
